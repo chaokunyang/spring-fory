@@ -32,16 +32,16 @@ separately.
 The examples below use the local development version. Run `./mvnw install` before using them in
 another local project.
 
-| Version line  | Spring Framework | Direct Spring artifact              | Spring Boot | Starter artifact                                 |
-| ------------- | ---------------- | ----------------------------------- | ----------- | ------------------------------------------------ |
-| Current       | 7.x              | `org.apache.fory:fory-json-spring`  | 4.x         | `org.apache.fory:fory-json-spring-boot-starter`  |
-| Compatibility | 6.2.x            | `org.apache.fory:fory-json-spring6` | 3.5.x       | `org.apache.fory:fory-json-spring-boot3-starter` |
+| Version line  | Spring Framework | Direct Spring artifact                        | Spring Boot | Starter artifact                                           |
+| ------------- | ---------------- | --------------------------------------------- | ----------- | ---------------------------------------------------------- |
+| Current       | 7.x              | `io.github.chaokunyang:fory-json-spring`      | 4.x         | `io.github.chaokunyang:fory-json-spring-boot-starter`      |
+| Compatibility | 6.2.x            | `io.github.chaokunyang:fory-json-spring6`     | 3.5.x       | `io.github.chaokunyang:fory-json-spring-boot3-starter`     |
 
 For a direct Spring Framework 7 application, add:
 
 ```xml
 <dependency>
-  <groupId>org.apache.fory</groupId>
+  <groupId>io.github.chaokunyang</groupId>
   <artifactId>fory-json-spring</artifactId>
   <version>1.0.0-SNAPSHOT</version>
 </dependency>
@@ -51,7 +51,7 @@ For a Spring Boot 4 application, add the starter instead:
 
 ```xml
 <dependency>
-  <groupId>org.apache.fory</groupId>
+  <groupId>io.github.chaokunyang</groupId>
   <artifactId>fory-json-spring-boot-starter</artifactId>
   <version>1.0.0-SNAPSHOT</version>
 </dependency>
@@ -61,7 +61,7 @@ For a direct Spring Framework 6.2 application, add:
 
 ```xml
 <dependency>
-  <groupId>org.apache.fory</groupId>
+  <groupId>io.github.chaokunyang</groupId>
   <artifactId>fory-json-spring6</artifactId>
   <version>1.0.0-SNAPSHOT</version>
 </dependency>
@@ -71,7 +71,7 @@ For a Spring Boot 3.5 application, add the compatibility starter instead:
 
 ```xml
 <dependency>
-  <groupId>org.apache.fory</groupId>
+  <groupId>io.github.chaokunyang</groupId>
   <artifactId>fory-json-spring-boot3-starter</artifactId>
   <version>1.0.0-SNAPSHOT</version>
 </dependency>
@@ -168,8 +168,8 @@ backpressure and releases each input buffer after it is consumed or if the reque
 ## Direct Spring Framework setup
 
 Direct Spring applications create a `ForyJson` instance and register the matching adapter. The two
-artifacts use the same `org.apache.fory.json.spring` package, but compile against their own Spring
-Framework line.
+artifacts use the same `io.github.chaokunyang.springfory` package, but compile against their own
+Spring Framework line.
 
 ### Spring MVC registration
 
@@ -177,7 +177,7 @@ Spring Framework 7 uses the server message-converter builder:
 
 ```java
 import org.apache.fory.json.ForyJson;
-import org.apache.fory.json.spring.ForyJsonHttpMessageConverter;
+import io.github.chaokunyang.springfory.ForyJsonHttpMessageConverter;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.converter.HttpMessageConverters;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
@@ -198,7 +198,7 @@ Spring Framework 6.2 adds the Fory converter before the other configured JSON co
 ```java
 import java.util.List;
 import org.apache.fory.json.ForyJson;
-import org.apache.fory.json.spring.ForyJsonHttpMessageConverter;
+import io.github.chaokunyang.springfory.ForyJsonHttpMessageConverter;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.converter.HttpMessageConverter;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
@@ -220,8 +220,8 @@ Spring Framework 7 replaces the default JSON encoder and decoder as follows:
 
 ```java
 import org.apache.fory.json.ForyJson;
-import org.apache.fory.json.spring.ForyJsonDecoder;
-import org.apache.fory.json.spring.ForyJsonEncoder;
+import io.github.chaokunyang.springfory.ForyJsonDecoder;
+import io.github.chaokunyang.springfory.ForyJsonEncoder;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.codec.ServerCodecConfigurer;
 import org.springframework.web.reactive.config.WebFluxConfigurer;
@@ -242,8 +242,8 @@ Spring Framework 6.2 uses the corresponding Jackson 2 codec slots:
 
 ```java
 import org.apache.fory.json.ForyJson;
-import org.apache.fory.json.spring.ForyJsonDecoder;
-import org.apache.fory.json.spring.ForyJsonEncoder;
+import io.github.chaokunyang.springfory.ForyJsonDecoder;
+import io.github.chaokunyang.springfory.ForyJsonEncoder;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.codec.ServerCodecConfigurer;
 import org.springframework.web.reactive.config.WebFluxConfigurer;

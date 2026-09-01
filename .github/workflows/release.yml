@@ -1,0 +1,62 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*.*.*'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: release-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    name: Publish to Maven Central
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+
+      - name: Set up Java and Maven Central credentials
+        uses: actions/setup-java@v6
+        with:
+          distribution: temurin
+          java-version: '17'
+          cache: maven
+          server-id: central
+          server-username-env-var: CENTRAL_USERNAME
+          server-password-env-var: CENTRAL_TOKEN
+          gpg-private-key: ${{ secrets.GPG_PRIVATE_KEY }}
+          gpg-passphrase-env-var: GPG_PASSPHRASE
+
+      - name: Set release version from tag
+        shell: bash
+        run: |
+          if [[ ! "$GITHUB_REF_NAME" =~ ^v[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+            echo "Expected a tag in the form v1.2.3, got: $GITHUB_REF_NAME" >&2
+            exit 1
+          fi
+
+          release_version="${GITHUB_REF_NAME#v}"
+          ./mvnw --batch-mode --no-transfer-progress \
+            org.codehaus.mojo:versions-maven-plugin:2.21.0:set \
+            -DnewVersion="$release_version" \
+            -DprocessAllModules=true \
+            -DgenerateBackupPoms=false
+
+          actual_version="$(./mvnw --quiet help:evaluate \
+            -Dexpression=project.version -DforceStdout)"
+          if [[ "$actual_version" != "$release_version" ]]; then
+            echo "Expected Maven version $release_version, got: $actual_version" >&2
+            exit 1
+          fi
+
+      - name: Publish release
+        env:
+          CENTRAL_USERNAME: ${{ secrets.CENTRAL_USERNAME }}
+          CENTRAL_TOKEN: ${{ secrets.CENTRAL_TOKEN }}
+          GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}
+        run: ./mvnw --batch-mode --no-transfer-progress -Prelease deploy
