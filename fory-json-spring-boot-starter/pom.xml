@@ -23,7 +23,7 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <parent>
-    <groupId>org.apache.fory</groupId>
+    <groupId>io.github.chaokunyang</groupId>
     <artifactId>spring-fory-parent</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <relativePath>../pom.xml</relativePath>
@@ -31,6 +31,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <artifactId>fory-json-spring-boot-starter</artifactId>
+  <name>Fory JSON Spring Boot 4 Starter</name>
 
   <description>Apache Fory JSON integration for Spring Boot 4.</description>
 
@@ -53,7 +54,7 @@
 
   <dependencies>
     <dependency>
-      <groupId>org.apache.fory</groupId>
+      <groupId>io.github.chaokunyang</groupId>
       <artifactId>fory-json-spring</artifactId>
       <version>${project.version}</version>
     </dependency>
@@ -118,7 +119,7 @@
         <configuration>
           <archive>
             <manifestEntries>
-              <Automatic-Module-Name>org.apache.fory.json.spring.boot</Automatic-Module-Name>
+              <Automatic-Module-Name>io.github.chaokunyang.springfory.boot</Automatic-Module-Name>
             </manifestEntries>
           </archive>
         </configuration>

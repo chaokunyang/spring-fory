@@ -25,7 +25,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>org.apache.fory</groupId>
+    <groupId>io.github.chaokunyang</groupId>
     <artifactId>spring-fory-parent</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <relativePath>../pom.xml</relativePath>
@@ -102,7 +102,7 @@
         <configuration>
           <archive>
             <manifestEntries>
-              <Automatic-Module-Name>org.apache.fory.json.spring</Automatic-Module-Name>
+              <Automatic-Module-Name>io.github.chaokunyang.springfory</Automatic-Module-Name>
             </manifestEntries>
           </archive>
         </configuration>

@@ -1,1 +1,1 @@
-org.apache.fory.json.spring.boot.ForyJsonAutoConfiguration
+io.github.chaokunyang.springfory.boot.ForyJsonAutoConfiguration
