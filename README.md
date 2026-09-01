@@ -1,5 +1,10 @@
 # Spring Fory
 
+[![fory-json-spring Maven Central](https://img.shields.io/maven-central/v/io.github.chaokunyang/fory-json-spring?style=for-the-badge&label=fory-json-spring)](https://central.sonatype.com/artifact/io.github.chaokunyang/fory-json-spring)
+[![fory-json-spring6 Maven Central](https://img.shields.io/maven-central/v/io.github.chaokunyang/fory-json-spring6?style=for-the-badge&label=fory-json-spring6)](https://central.sonatype.com/artifact/io.github.chaokunyang/fory-json-spring6)
+[![fory-json-spring-boot-starter Maven Central](https://img.shields.io/maven-central/v/io.github.chaokunyang/fory-json-spring-boot-starter?style=for-the-badge&label=fory-json-spring-boot-starter)](https://central.sonatype.com/artifact/io.github.chaokunyang/fory-json-spring-boot-starter)
+[![fory-json-spring-boot3-starter Maven Central](https://img.shields.io/maven-central/v/io.github.chaokunyang/fory-json-spring-boot3-starter?style=for-the-badge&label=fory-json-spring-boot3-starter)](https://central.sonatype.com/artifact/io.github.chaokunyang/fory-json-spring-boot3-starter)
+
 Spring MVC message converters and Spring WebFlux codecs for
 [Apache Fory JSON](https://fory.apache.org/), with auto-configuration starters for Spring Boot.
 
