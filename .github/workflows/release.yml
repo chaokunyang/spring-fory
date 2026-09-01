@@ -1,0 +1,53 @@
+name: Publish Maven packages
+
+on:
+  push:
+    tags:
+      - 'v*.*.*'
+
+permissions:
+  contents: read
+  packages: write
+
+jobs:
+  publish:
+    name: Publish ${{ github.ref_name }}
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Validate release tag
+        id: version
+        shell: bash
+        run: |
+          if [[ ! "${GITHUB_REF_NAME}" =~ ^v([0-9]+)\.([0-9]+)\.([0-9]+)$ ]]; then
+            echo "Expected a tag in the form vX.Y.Z, got ${GITHUB_REF_NAME}" >&2
+            exit 1
+          fi
+          echo "value=${GITHUB_REF_NAME#v}" >> "${GITHUB_OUTPUT}"
+
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+          cache: maven
+          server-id: github
+          server-username: GITHUB_ACTOR
+          server-password: GITHUB_TOKEN
+
+      - name: Set release version
+        run: >-
+          ./mvnw --batch-mode --no-transfer-progress
+          versions:set
+          -DnewVersion=${{ steps.version.outputs.value }}
+          -DprocessAllModules=true
+          -DgenerateBackupPoms=false
+
+      - name: Publish to GitHub Packages
+        run: ./mvnw --batch-mode --no-transfer-progress -Prelease deploy
+        env:
+          GITHUB_ACTOR: ${{ github.actor }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
