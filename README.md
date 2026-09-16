@@ -27,7 +27,7 @@ For Spring Boot 4, add:
 <dependency>
   <groupId>io.github.chaokunyang</groupId>
   <artifactId>fory-json-spring-boot-starter</artifactId>
-  <version>1.0.0</version>
+  <version>1.1.0</version>
 </dependency>
 ```
 
@@ -37,7 +37,7 @@ For Spring Boot 3.5, add:
 <dependency>
   <groupId>io.github.chaokunyang</groupId>
   <artifactId>fory-json-spring-boot3-starter</artifactId>
-  <version>1.0.0</version>
+  <version>1.1.0</version>
 </dependency>
 ```
 
@@ -51,7 +51,7 @@ instead of a Boot starter. For example, with Spring Framework 7:
 <dependency>
   <groupId>io.github.chaokunyang</groupId>
   <artifactId>fory-json-spring</artifactId>
-  <version>1.0.0</version>
+  <version>1.1.0</version>
 </dependency>
 ```
 
