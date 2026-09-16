@@ -1,0 +1,5 @@
+META-INF/spring-configuration-metadata.json
+io/github/chaokunyang/springfory/boot3/ForyJsonProperties.class
+io/github/chaokunyang/springfory/boot3/ForyJsonAutoConfiguration$MvcConfiguration.class
+io/github/chaokunyang/springfory/boot3/ForyJsonAutoConfiguration.class
+io/github/chaokunyang/springfory/boot3/ForyJsonAutoConfiguration$WebFluxConfiguration.class

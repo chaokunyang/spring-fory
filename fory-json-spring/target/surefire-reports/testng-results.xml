@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="22" passed="22" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-09-16T11:29:56 UTC" name="Surefire suite" finished-at="2026-09-16T11:29:56 UTC" duration-ms="360">
+    <groups>
+    </groups>
+    <test started-at="2026-09-16T11:29:56 UTC" name="Surefire test" finished-at="2026-09-16T11:29:56 UTC" duration-ms="360">
+      <class name="io.github.chaokunyang.springfory.ForyJsonWebFluxCodecTest">
+        <test-method signature="capabilitiesAndConfiguration()[pri:0, instance:io.github.chaokunyang.springfory.ForyJsonWebFluxCodecTest@45ca843]" started-at="2026-09-16T11:29:56 UTC" name="capabilitiesAndConfiguration" finished-at="2026-09-16T11:29:56 UTC" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- capabilitiesAndConfiguration -->
+        <test-method signature="decodesFluxJsonArrayAcrossBuffers()[pri:0, instance:io.github.chaokunyang.springfory.ForyJsonWebFluxCodecTest@45ca843]" started-at="2026-09-16T11:29:56 UTC" name="decodesFluxJsonArrayAcrossBuffers" finished-at="2026-09-16T11:29:56 UTC" duration-ms="116" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- decodesFluxJsonArrayAcrossBuffers -->
+        <test-method signature="decodesMonoAcrossBuffers()[pri:0, instance:io.github.chaokunyang.springfory.ForyJsonWebFluxCodecTest@45ca843]" started-at="2026-09-16T11:29:56 UTC" name="decodesMonoAcrossBuffers" finished-at="2026-09-16T11:29:56 UTC" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- decodesMonoAcrossBuffers -->
+        <test-method signature="decodesNdjsonAcrossBuffers()[pri:0, instance:io.github.chaokunyang.springfory.ForyJsonWebFluxCodecTest@45ca843]" started-at="2026-09-16T11:29:56 UTC" name="decodesNdjsonAcrossBuffers" finished-at="2026-09-16T11:29:56 UTC" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- decodesNdjsonAcrossBuffers -->
+        <test-method signature="decodesProblemDetailWithoutStatus()[pri:0, instance:io.github.chaokunyang.springfory.ForyJsonWebFluxCodecTest@45ca843]" started-at="2026-09-16T11:29:56 UTC" name="decodesProblemDetailWithoutStatus" finished-at="2026-09-16T11:29:56 UTC" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- decodesProblemDetailWithoutStatus -->
+        <test-method signature="decodesValuesAcrossThreeBuffers()[pri:0, instance:io.github.chaokunyang.springfory.ForyJsonWebFluxCodecTest@45ca843]" started-at="2026-09-16T11:29:56 UTC" name="decodesValuesAcrossThreeBuffers" finished-at="2026-09-16T11:29:56 UTC" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- decodesValuesAcrossThreeBuffers -->
+        <test-method signature="encodesFluxAsJsonArray()[pri:0, instance:io.github.chaokunyang.springfory.ForyJsonWebFluxCodecTest@45ca843]" started-at="2026-09-16T11:29:56 UTC" name="encodesFluxAsJsonArray" finished-at="2026-09-16T11:29:56 UTC" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- encodesFluxAsJsonArray -->
+        <test-method signature="encodesMonoAsOneValue()[pri:0, instance:io.github.chaokunyang.springfory.ForyJsonWebFluxCodecTest@45ca843]" started-at="2026-09-16T11:29:56 UTC" name="encodesMonoAsOneValue" finished-at="2026-09-16T11:29:56 UTC" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- encodesMonoAsOneValue -->
+        <test-method signature="encodesNdjsonRecords()[pri:0, instance:io.github.chaokunyang.springfory.ForyJsonWebFluxCodecTest@45ca843]" started-at="2026-09-16T11:29:56 UTC" name="encodesNdjsonRecords" finished-at="2026-09-16T11:29:56 UTC" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- encodesNdjsonRecords -->
+        <test-method signature="preservesBackpressureAndReleases()[pri:0, instance:io.github.chaokunyang.springfory.ForyJsonWebFluxCodecTest@45ca843]" started-at="2026-09-16T11:29:56 UTC" name="preservesBackpressureAndReleases" finished-at="2026-09-16T11:29:56 UTC" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preservesBackpressureAndReleases -->
+        <test-method signature="releasesBuffersOnParseError()[pri:0, instance:io.github.chaokunyang.springfory.ForyJsonWebFluxCodecTest@45ca843]" started-at="2026-09-16T11:29:56 UTC" name="releasesBuffersOnParseError" finished-at="2026-09-16T11:29:56 UTC" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- releasesBuffersOnParseError -->
+        <test-method signature="releasesJoinedBuffersOnCancelAndError()[pri:0, instance:io.github.chaokunyang.springfory.ForyJsonWebFluxCodecTest@45ca843]" started-at="2026-09-16T11:29:56 UTC" name="releasesJoinedBuffersOnCancelAndError" finished-at="2026-09-16T11:29:56 UTC" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- releasesJoinedBuffersOnCancelAndError -->
+        <test-method signature="releasesSingleBufferOverLimit()[pri:0, instance:io.github.chaokunyang.springfory.ForyJsonWebFluxCodecTest@45ca843]" started-at="2026-09-16T11:29:56 UTC" name="releasesSingleBufferOverLimit" finished-at="2026-09-16T11:29:56 UTC" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- releasesSingleBufferOverLimit -->
+        <test-method signature="supportsProblemDetailInMonoAndFlux()[pri:0, instance:io.github.chaokunyang.springfory.ForyJsonWebFluxCodecTest@45ca843]" started-at="2026-09-16T11:29:56 UTC" name="supportsProblemDetailInMonoAndFlux" finished-at="2026-09-16T11:29:56 UTC" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- supportsProblemDetailInMonoAndFlux -->
+        <test-method signature="wrapsProblemDetailArrayErrors()[pri:0, instance:io.github.chaokunyang.springfory.ForyJsonWebFluxCodecTest@45ca843]" started-at="2026-09-16T11:29:56 UTC" name="wrapsProblemDetailArrayErrors" finished-at="2026-09-16T11:29:56 UTC" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wrapsProblemDetailArrayErrors -->
+      </class> <!-- io.github.chaokunyang.springfory.ForyJsonWebFluxCodecTest -->
+      <class name="io.github.chaokunyang.springfory.ForyJsonHttpMessageConverterTest">
+        <test-method signature="constructorsAndMediaTypes()[pri:0, instance:io.github.chaokunyang.springfory.ForyJsonHttpMessageConverterTest@6b2ea799]" started-at="2026-09-16T11:29:56 UTC" name="constructorsAndMediaTypes" finished-at="2026-09-16T11:29:56 UTC" duration-ms="49" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- constructorsAndMediaTypes -->
+        <test-method signature="excludesFrameworkOwnedBodies()[pri:0, instance:io.github.chaokunyang.springfory.ForyJsonHttpMessageConverterTest@6b2ea799]" started-at="2026-09-16T11:29:56 UTC" name="excludesFrameworkOwnedBodies" finished-at="2026-09-16T11:29:56 UTC" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- excludesFrameworkOwnedBodies -->
+        <test-method signature="mapsForyFailuresAndPreservesIoFailures()[pri:0, instance:io.github.chaokunyang.springfory.ForyJsonHttpMessageConverterTest@6b2ea799]" started-at="2026-09-16T11:29:56 UTC" name="mapsForyFailuresAndPreservesIoFailures" finished-at="2026-09-16T11:29:56 UTC" duration-ms="59" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mapsForyFailuresAndPreservesIoFailures -->
+        <test-method signature="preservesGenericType()[pri:0, instance:io.github.chaokunyang.springfory.ForyJsonHttpMessageConverterTest@6b2ea799]" started-at="2026-09-16T11:29:56 UTC" name="preservesGenericType" finished-at="2026-09-16T11:29:56 UTC" duration-ms="12" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preservesGenericType -->
+        <test-method signature="readsActualBytesWithinLimit()[pri:0, instance:io.github.chaokunyang.springfory.ForyJsonHttpMessageConverterTest@6b2ea799]" started-at="2026-09-16T11:29:56 UTC" name="readsActualBytesWithinLimit" finished-at="2026-09-16T11:29:56 UTC" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- readsActualBytesWithinLimit -->
+        <test-method signature="rejectsActualBytesBeyondLimit()[pri:0, instance:io.github.chaokunyang.springfory.ForyJsonHttpMessageConverterTest@6b2ea799]" started-at="2026-09-16T11:29:56 UTC" name="rejectsActualBytesBeyondLimit" finished-at="2026-09-16T11:29:56 UTC" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- rejectsActualBytesBeyondLimit -->
+        <test-method signature="supportsProblemDetailContract()[pri:0, instance:io.github.chaokunyang.springfory.ForyJsonHttpMessageConverterTest@6b2ea799]" started-at="2026-09-16T11:29:56 UTC" name="supportsProblemDetailContract" finished-at="2026-09-16T11:29:56 UTC" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- supportsProblemDetailContract -->
+      </class> <!-- io.github.chaokunyang.springfory.ForyJsonHttpMessageConverterTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

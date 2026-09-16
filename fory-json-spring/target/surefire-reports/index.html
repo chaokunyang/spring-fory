@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Surefire_suite" class="navigator-link">
+              <span class="suite-name border-passed">Surefire suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Surefire_suite" class="navigator-link ">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Surefire_suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Surefire_suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Surefire_suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Surefire_suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Surefire_suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Surefire_suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">22 methods,   22 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods passed suite-Surefire_suite"> (hide)</a> <!-- hide-methods passed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods passed suite-Surefire_suite"> (show)</a> <!-- show-methods passed suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Surefire_suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="io.github.chaokunyang.springfory.ForyJsonWebFluxCodecTest" class="method navigator-link" hash-for-method="capabilitiesAndConfiguration">capabilitiesAndConfiguration</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="io.github.chaokunyang.springfory.ForyJsonHttpMessageConverterTest" class="method navigator-link" hash-for-method="constructorsAndMediaTypes">constructorsAndMediaTypes</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="io.github.chaokunyang.springfory.ForyJsonWebFluxCodecTest" class="method navigator-link" hash-for-method="decodesFluxJsonArrayAcrossBuffers">decodesFluxJsonArrayAcrossBuffers</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="io.github.chaokunyang.springfory.ForyJsonWebFluxCodecTest" class="method navigator-link" hash-for-method="decodesMonoAcrossBuffers">decodesMonoAcrossBuffers</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="io.github.chaokunyang.springfory.ForyJsonWebFluxCodecTest" class="method navigator-link" hash-for-method="decodesNdjsonAcrossBuffers">decodesNdjsonAcrossBuffers</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="io.github.chaokunyang.springfory.ForyJsonWebFluxCodecTest" class="method navigator-link" hash-for-method="decodesProblemDetailWithoutStatus">decodesProblemDetailWithoutStatus</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="io.github.chaokunyang.springfory.ForyJsonWebFluxCodecTest" class="method navigator-link" hash-for-method="decodesValuesAcrossThreeBuffers">decodesValuesAcrossThreeBuffers</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="io.github.chaokunyang.springfory.ForyJsonWebFluxCodecTest" class="method navigator-link" hash-for-method="encodesFluxAsJsonArray">encodesFluxAsJsonArray</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="io.github.chaokunyang.springfory.ForyJsonWebFluxCodecTest" class="method navigator-link" hash-for-method="encodesMonoAsOneValue">encodesMonoAsOneValue</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="io.github.chaokunyang.springfory.ForyJsonWebFluxCodecTest" class="method navigator-link" hash-for-method="encodesNdjsonRecords">encodesNdjsonRecords</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="io.github.chaokunyang.springfory.ForyJsonHttpMessageConverterTest" class="method navigator-link" hash-for-method="excludesFrameworkOwnedBodies">excludesFrameworkOwnedBodies</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="io.github.chaokunyang.springfory.ForyJsonHttpMessageConverterTest" class="method navigator-link" hash-for-method="mapsForyFailuresAndPreservesIoFailures">mapsForyFailuresAndPreservesIoFailures</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="io.github.chaokunyang.springfory.ForyJsonWebFluxCodecTest" class="method navigator-link" hash-for-method="preservesBackpressureAndReleases">preservesBackpressureAndReleases</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="io.github.chaokunyang.springfory.ForyJsonHttpMessageConverterTest" class="method navigator-link" hash-for-method="preservesGenericType">preservesGenericType</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="io.github.chaokunyang.springfory.ForyJsonHttpMessageConverterTest" class="method navigator-link" hash-for-method="readsActualBytesWithinLimit">readsActualBytesWithinLimit</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="io.github.chaokunyang.springfory.ForyJsonHttpMessageConverterTest" class="method navigator-link" hash-for-method="rejectsActualBytesBeyondLimit">rejectsActualBytesBeyondLimit</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="io.github.chaokunyang.springfory.ForyJsonWebFluxCodecTest" class="method navigator-link" hash-for-method="releasesBuffersOnParseError">releasesBuffersOnParseError</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="io.github.chaokunyang.springfory.ForyJsonWebFluxCodecTest" class="method navigator-link" hash-for-method="releasesJoinedBuffersOnCancelAndError">releasesJoinedBuffersOnCancelAndError</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="io.github.chaokunyang.springfory.ForyJsonWebFluxCodecTest" class="method navigator-link" hash-for-method="releasesSingleBufferOverLimit">releasesSingleBufferOverLimit</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="io.github.chaokunyang.springfory.ForyJsonHttpMessageConverterTest" class="method navigator-link" hash-for-method="supportsProblemDetailContract">supportsProblemDetailContract</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="io.github.chaokunyang.springfory.ForyJsonWebFluxCodecTest" class="method navigator-link" hash-for-method="supportsProblemDetailInMonoAndFlux">supportsProblemDetailInMonoAndFlux</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="io.github.chaokunyang.springfory.ForyJsonWebFluxCodecTest" class="method navigator-link" hash-for-method="wrapsProblemDetailArrayErrors">wrapsProblemDetailArrayErrors</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Surefire_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">io.github.chaokunyang.springfory.ForyJsonHttpMessageConverterTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="constructorsAndMediaTypes">
+                  </a> <!-- constructorsAndMediaTypes -->
+                  <span class="method-name">constructorsAndMediaTypes</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="excludesFrameworkOwnedBodies">
+                  </a> <!-- excludesFrameworkOwnedBodies -->
+                  <span class="method-name">excludesFrameworkOwnedBodies</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="mapsForyFailuresAndPreservesIoFailures">
+                  </a> <!-- mapsForyFailuresAndPreservesIoFailures -->
+                  <span class="method-name">mapsForyFailuresAndPreservesIoFailures</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="preservesGenericType">
+                  </a> <!-- preservesGenericType -->
+                  <span class="method-name">preservesGenericType</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="readsActualBytesWithinLimit">
+                  </a> <!-- readsActualBytesWithinLimit -->
+                  <span class="method-name">readsActualBytesWithinLimit</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="rejectsActualBytesBeyondLimit">
+                  </a> <!-- rejectsActualBytesBeyondLimit -->
+                  <span class="method-name">rejectsActualBytesBeyondLimit</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="supportsProblemDetailContract">
+                  </a> <!-- supportsProblemDetailContract -->
+                  <span class="method-name">supportsProblemDetailContract</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">io.github.chaokunyang.springfory.ForyJsonWebFluxCodecTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="capabilitiesAndConfiguration">
+                  </a> <!-- capabilitiesAndConfiguration -->
+                  <span class="method-name">capabilitiesAndConfiguration</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="decodesFluxJsonArrayAcrossBuffers">
+                  </a> <!-- decodesFluxJsonArrayAcrossBuffers -->
+                  <span class="method-name">decodesFluxJsonArrayAcrossBuffers</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="decodesMonoAcrossBuffers">
+                  </a> <!-- decodesMonoAcrossBuffers -->
+                  <span class="method-name">decodesMonoAcrossBuffers</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="decodesNdjsonAcrossBuffers">
+                  </a> <!-- decodesNdjsonAcrossBuffers -->
+                  <span class="method-name">decodesNdjsonAcrossBuffers</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="decodesProblemDetailWithoutStatus">
+                  </a> <!-- decodesProblemDetailWithoutStatus -->
+                  <span class="method-name">decodesProblemDetailWithoutStatus</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="decodesValuesAcrossThreeBuffers">
+                  </a> <!-- decodesValuesAcrossThreeBuffers -->
+                  <span class="method-name">decodesValuesAcrossThreeBuffers</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="encodesFluxAsJsonArray">
+                  </a> <!-- encodesFluxAsJsonArray -->
+                  <span class="method-name">encodesFluxAsJsonArray</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="encodesMonoAsOneValue">
+                  </a> <!-- encodesMonoAsOneValue -->
+                  <span class="method-name">encodesMonoAsOneValue</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="encodesNdjsonRecords">
+                  </a> <!-- encodesNdjsonRecords -->
+                  <span class="method-name">encodesNdjsonRecords</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="preservesBackpressureAndReleases">
+                  </a> <!-- preservesBackpressureAndReleases -->
+                  <span class="method-name">preservesBackpressureAndReleases</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="releasesBuffersOnParseError">
+                  </a> <!-- releasesBuffersOnParseError -->
+                  <span class="method-name">releasesBuffersOnParseError</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="releasesJoinedBuffersOnCancelAndError">
+                  </a> <!-- releasesJoinedBuffersOnCancelAndError -->
+                  <span class="method-name">releasesJoinedBuffersOnCancelAndError</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="releasesSingleBufferOverLimit">
+                  </a> <!-- releasesSingleBufferOverLimit -->
+                  <span class="method-name">releasesSingleBufferOverLimit</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="supportsProblemDetailInMonoAndFlux">
+                  </a> <!-- supportsProblemDetailInMonoAndFlux -->
+                  <span class="method-name">supportsProblemDetailInMonoAndFlux</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="wrapsProblemDetailArrayErrors">
+                  </a> <!-- wrapsProblemDetailArrayErrors -->
+                  <span class="method-name">wrapsProblemDetailArrayErrors</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+        </div> <!-- panel Surefire_suite -->
+        <div panel-name="test-xml-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Surefire suite&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Surefire test&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;io.github.chaokunyang.springfory.ForyJsonHttpMessageConverterTest&quot;/&gt;
+      &lt;class name=&quot;io.github.chaokunyang.springfory.ForyJsonWebFluxCodecTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Surefire test --&gt;
+&lt;/suite&gt; &lt;!-- Surefire suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Surefire test (2 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Surefire_suite');
+function tableData_Surefire_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(22);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'decodesFluxJsonArrayAcrossBuffers')
+data.setCell(0, 2, 'io.github.chaokunyang.springfory.ForyJsonWebFluxCodecTest')
+data.setCell(0, 3, 116);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'mapsForyFailuresAndPreservesIoFailures')
+data.setCell(1, 2, 'io.github.chaokunyang.springfory.ForyJsonHttpMessageConverterTest')
+data.setCell(1, 3, 59);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'constructorsAndMediaTypes')
+data.setCell(2, 2, 'io.github.chaokunyang.springfory.ForyJsonHttpMessageConverterTest')
+data.setCell(2, 3, 49);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'preservesGenericType')
+data.setCell(3, 2, 'io.github.chaokunyang.springfory.ForyJsonHttpMessageConverterTest')
+data.setCell(3, 3, 12);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'supportsProblemDetailContract')
+data.setCell(4, 2, 'io.github.chaokunyang.springfory.ForyJsonHttpMessageConverterTest')
+data.setCell(4, 3, 11);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'preservesBackpressureAndReleases')
+data.setCell(5, 2, 'io.github.chaokunyang.springfory.ForyJsonWebFluxCodecTest')
+data.setCell(5, 3, 7);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'decodesMonoAcrossBuffers')
+data.setCell(6, 2, 'io.github.chaokunyang.springfory.ForyJsonWebFluxCodecTest')
+data.setCell(6, 3, 7);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'encodesFluxAsJsonArray')
+data.setCell(7, 2, 'io.github.chaokunyang.springfory.ForyJsonWebFluxCodecTest')
+data.setCell(7, 3, 7);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'capabilitiesAndConfiguration')
+data.setCell(8, 2, 'io.github.chaokunyang.springfory.ForyJsonWebFluxCodecTest')
+data.setCell(8, 3, 6);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'decodesValuesAcrossThreeBuffers')
+data.setCell(9, 2, 'io.github.chaokunyang.springfory.ForyJsonWebFluxCodecTest')
+data.setCell(9, 3, 5);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'releasesSingleBufferOverLimit')
+data.setCell(10, 2, 'io.github.chaokunyang.springfory.ForyJsonWebFluxCodecTest')
+data.setCell(10, 3, 5);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'supportsProblemDetailInMonoAndFlux')
+data.setCell(11, 2, 'io.github.chaokunyang.springfory.ForyJsonWebFluxCodecTest')
+data.setCell(11, 3, 3);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'decodesNdjsonAcrossBuffers')
+data.setCell(12, 2, 'io.github.chaokunyang.springfory.ForyJsonWebFluxCodecTest')
+data.setCell(12, 3, 2);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'decodesProblemDetailWithoutStatus')
+data.setCell(13, 2, 'io.github.chaokunyang.springfory.ForyJsonWebFluxCodecTest')
+data.setCell(13, 3, 2);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'releasesBuffersOnParseError')
+data.setCell(14, 2, 'io.github.chaokunyang.springfory.ForyJsonWebFluxCodecTest')
+data.setCell(14, 3, 1);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'releasesJoinedBuffersOnCancelAndError')
+data.setCell(15, 2, 'io.github.chaokunyang.springfory.ForyJsonWebFluxCodecTest')
+data.setCell(15, 3, 1);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'excludesFrameworkOwnedBodies')
+data.setCell(16, 2, 'io.github.chaokunyang.springfory.ForyJsonHttpMessageConverterTest')
+data.setCell(16, 3, 1);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'wrapsProblemDetailArrayErrors')
+data.setCell(17, 2, 'io.github.chaokunyang.springfory.ForyJsonWebFluxCodecTest')
+data.setCell(17, 3, 1);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'encodesMonoAsOneValue')
+data.setCell(18, 2, 'io.github.chaokunyang.springfory.ForyJsonWebFluxCodecTest')
+data.setCell(18, 3, 1);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'encodesNdjsonRecords')
+data.setCell(19, 2, 'io.github.chaokunyang.springfory.ForyJsonWebFluxCodecTest')
+data.setCell(19, 3, 1);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'rejectsActualBytesBeyondLimit')
+data.setCell(20, 2, 'io.github.chaokunyang.springfory.ForyJsonHttpMessageConverterTest')
+data.setCell(20, 3, 1);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'readsActualBytesWithinLimit')
+data.setCell(21, 2, 'io.github.chaokunyang.springfory.ForyJsonHttpMessageConverterTest')
+data.setCell(21, 3, 1);
+window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 299 ms</span>
+              <div id="times-div-Surefire_suite">
+              </div> <!-- times-div-Surefire_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">io.github.chaokunyang.springfory.ForyJsonHttpMessageConverterTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">constructorsAndMediaTypes</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">excludesFrameworkOwnedBodies</span>
+                <span class="method-start">52 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">mapsForyFailuresAndPreservesIoFailures</span>
+                <span class="method-start">55 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">preservesGenericType</span>
+                <span class="method-start">115 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">readsActualBytesWithinLimit</span>
+                <span class="method-start">128 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">rejectsActualBytesBeyondLimit</span>
+                <span class="method-start">131 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">supportsProblemDetailContract</span>
+                <span class="method-start">133 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">io.github.chaokunyang.springfory.ForyJsonWebFluxCodecTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">capabilitiesAndConfiguration</span>
+                <span class="method-start">150 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">decodesFluxJsonArrayAcrossBuffers</span>
+                <span class="method-start">157 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">decodesMonoAcrossBuffers</span>
+                <span class="method-start">274 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">decodesNdjsonAcrossBuffers</span>
+                <span class="method-start">281 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">decodesProblemDetailWithoutStatus</span>
+                <span class="method-start">284 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">decodesValuesAcrossThreeBuffers</span>
+                <span class="method-start">287 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">encodesFluxAsJsonArray</span>
+                <span class="method-start">292 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">encodesMonoAsOneValue</span>
+                <span class="method-start">300 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">encodesNdjsonRecords</span>
+                <span class="method-start">302 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">preservesBackpressureAndReleases</span>
+                <span class="method-start">303 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">releasesBuffersOnParseError</span>
+                <span class="method-start">310 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">releasesJoinedBuffersOnCancelAndError</span>
+                <span class="method-start">312 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">releasesSingleBufferOverLimit</span>
+                <span class="method-start">313 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">supportsProblemDetailInMonoAndFlux</span>
+                <span class="method-start">318 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">wrapsProblemDetailArrayErrors</span>
+                <span class="method-start">322 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

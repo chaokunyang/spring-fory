@@ -1,0 +1,3 @@
+/home/runner/work/spring-fory/spring-fory/fory-json-spring-boot-starter/src/test/java/io/github/chaokunyang/springfory/boot/ForyJsonAutoConfigurationTest.java
+/home/runner/work/spring-fory/spring-fory/fory-json-spring-boot-starter/src/test/java/io/github/chaokunyang/springfory/boot/ForyJsonMvcIntegrationTest.java
+/home/runner/work/spring-fory/spring-fory/fory-json-spring-boot-starter/src/test/java/io/github/chaokunyang/springfory/boot/ForyJsonWebFluxIntegrationTest.java

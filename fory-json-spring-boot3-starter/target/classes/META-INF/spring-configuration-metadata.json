@@ -1,0 +1,22 @@
+{
+  "groups": [
+    {
+      "name": "fory.json",
+      "type": "io.github.chaokunyang.springfory.boot3.ForyJsonProperties",
+      "sourceType": "io.github.chaokunyang.springfory.boot3.ForyJsonProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "fory.json.max-input-bytes",
+      "type": "java.lang.Integer",
+      "description": "Maximum size in bytes of one Spring MVC request body decoded by Fory JSON.",
+      "sourceType": "io.github.chaokunyang.springfory.boot3.ForyJsonProperties",
+      "defaultValue": 67108864
+    }
+  ],
+  "hints": [],
+  "ignored": {
+    "properties": []
+  }
+}
